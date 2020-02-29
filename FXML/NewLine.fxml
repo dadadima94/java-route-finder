@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="944.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewLineController">
+	<children>
+		<Label layoutX="47.0" layoutY="42.0" text="Select stops to be connected" />
+		<ScrollPane fx:id="scrollPane" layoutX="47.0" layoutY="78.0" prefHeight="842.0" prefWidth="1061.0" />
+		<Button fx:id="addButton" layoutX="1177.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleAddEvent" text="Add stops to new line" />
+		<Label fx:id="resultMessage" layoutX="1209.0" layoutY="145.0" />
+      <TextField fx:id="routeName" layoutX="1177.0" layoutY="75.0" promptText="Enter the route name..." />
+      <Label layoutX="1116.0" layoutY="80.0" prefHeight="21.0" prefWidth="49.0" text="Name: " />
+      <Label fx:id="successLabel" layoutX="1177.0" layoutY="180.0" prefHeight="84.0" prefWidth="164.0" text="Stops added" textAlignment="CENTER" visible="false" />
+	</children>
+</AnchorPane>

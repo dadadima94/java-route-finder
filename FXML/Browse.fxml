@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1095.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BrowseController">
+	<children>
+		<CheckBox fx:id="nameCheck" layoutX="984.0" layoutY="73.0" mnemonicParsing="false" text="Name" />
+		<TextField fx:id="nameInput" layoutX="1084.0" layoutY="68.0" onKeyTyped="#liveRefreshStops" promptText="Search..." />
+		<CheckBox fx:id="longitudeCheck" layoutX="984.0" layoutY="114.0" mnemonicParsing="false" text="Longitude" />
+		<TextField fx:id="longitudeInput" layoutX="1084.0" layoutY="109.0" promptText="Longitude..." />
+		<RadioButton fx:id="longitudeAbove" layoutX="984.0" layoutY="151.0" mnemonicParsing="false" selected="true" text="Above">
+			<toggleGroup>
+				<ToggleGroup fx:id="longitude" />
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="longitudeBelow" layoutX="984.0" layoutY="177.0" mnemonicParsing="false" text="Below" toggleGroup="$longitude">
+		</RadioButton>
+		<CheckBox fx:id="latitudeCheck" layoutX="984.0" layoutY="218.0" mnemonicParsing="false" text="Latitude" />
+		<TextField fx:id="latitudeInput" layoutX="1084.0" layoutY="213.0" promptText="Latitude..." />
+		<RadioButton fx:id="latitudeAbove" layoutX="984.0" layoutY="258.0" mnemonicParsing="false" selected="true" text="Above">
+			<toggleGroup>
+				<ToggleGroup fx:id="latitude" />
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="latitudeBelow" layoutX="984.0" layoutY="284.0" mnemonicParsing="false" text="Below" toggleGroup="$latitude" />
+		<Button fx:id="refreshButton" layoutX="987.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleRefreshAction" prefHeight="31.0" prefWidth="288.0" text="Refresh" />
+      <TableView fx:id="stopList" layoutX="39.0" layoutY="65.0" prefHeight="514.0" prefWidth="890.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="320.0" text="Name" />
+          <TableColumn fx:id="lonCol" prefWidth="150.0" text="Longitude" />
+            <TableColumn fx:id="latCol" prefWidth="150.0" text="Latitude" />
+            <TableColumn fx:id="idCol" minWidth="0.0" prefWidth="270.0" text="ID" />
+        </columns>
+      </TableView>
+	</children>
+</AnchorPane>

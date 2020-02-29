@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1111.0" prefWidth="1951.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="-2.0" prefHeight="1086.0" prefWidth="1920.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Browse stops">
+            <content>
+              <fx:include fx:id="Browse" source="Browse.fxml" />
+            </content>
+          </Tab>
+          <Tab text="Check connections">
+            <content>
+              <fx:include fx:id="Connections" source="Connections.fxml" />
+            </content>
+          </Tab>
+            <Tab text="New Line">
+              <content>
+                <fx:include fx:id="NewLine" source="NewLine.fxml" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

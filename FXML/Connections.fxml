@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="954.0" prefWidth="1515.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConnectionsController">
+	<children>
+		<ComboBox fx:id="firstChoice" layoutX="120.0" layoutY="43.0" prefHeight="31.0" prefWidth="337.0" promptText="Select a stop" />
+		<ComboBox fx:id="secondChoice" layoutX="120.0" layoutY="99.0" prefHeight="31.0" prefWidth="337.0" promptText="Select a stop" />
+		<Label layoutX="29.0" layoutY="48.0" mnemonicParsing="false" text="Stop 1" />
+		<Label layoutX="29.0" layoutY="104.0" mnemonicParsing="false" text="Stop 2" />
+		<TextArea fx:id="display" layoutX="476.0" layoutY="48.0" prefHeight="748.0" prefWidth="907.0" text="Lines will be shown here&#10;" />
+		<Button fx:id="searchButton" layoutX="29.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="31.0" prefWidth="429.0" text="Search" />
+	</children>
+</AnchorPane>
